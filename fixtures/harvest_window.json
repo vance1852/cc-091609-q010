@@ -1,1 +1,58 @@
-{"crop":"黄芩","parcels":["field-a","field-b"],"observations":[{"kind":"flowering-stage","parcel":"field-a","occurredAt":"2026-09-12T09:00:00+08:00"},{"kind":"field-input","parcel":"field-a","occurredAt":"2026-09-10T16:00:00+08:00","recordedAt":"2026-09-16T08:30:00+08:00"},{"kind":"heavy-rain","parcel":"field-b","occurredAt":"2026-09-16T04:00:00+08:00"}],"workOrders":[{"parcel":"field-a","state":"claimed"}]}
+{
+  "crop": "黄芩",
+  "asOf": "2026-09-16T12:00:00+08:00",
+  "parcels": ["field-a", "field-b", "field-c"],
+  "provenance": [
+    {"provenanceId": "prov-a", "parcel": "field-a", "cultivar": "山东蒙阴农家种", "seedSource": "2024年自留种"},
+    {"provenanceId": "prov-b", "parcel": "field-b", "cultivar": "甘肃陇西种源", "seedSource": "2025年统一调拨"},
+    {"provenanceId": "prov-c", "parcel": "field-c", "cultivar": "甘肃陇西种源", "seedSource": "2025年统一调拨"}
+  ],
+  "observations": [
+    {"kind": "flowering-stage", "parcel": "field-b", "value": "果熟期，根部充实", "occurredAt": "2026-09-11T09:00:00+08:00", "recordedAt": "2026-09-11T09:30:00+08:00"},
+    {"kind": "flowering-stage", "parcel": "field-c", "value": "果熟期，根部充实", "occurredAt": "2026-09-11T10:00:00+08:00", "recordedAt": "2026-09-11T10:30:00+08:00"},
+    {"kind": "flowering-stage", "parcel": "field-a", "value": "果熟期，根部充实", "occurredAt": "2026-09-12T09:00:00+08:00", "recordedAt": "2026-09-12T09:30:00+08:00"},
+    {"kind": "field-input", "observationId": "obs-a-input-late", "parcel": "field-a", "product": "多菌灵可湿性粉剂", "phiHours": 336, "occurredAt": "2026-09-10T16:00:00+08:00", "recordedAt": "2026-09-16T09:40:00+08:00"},
+    {"kind": "heavy-rain", "parcel": "field-b", "value": "58mm，田间积水", "occurredAt": "2026-09-16T04:00:00+08:00", "endedAt": "2026-09-16T08:00:00+08:00", "recordedAt": "2026-09-16T05:00:00+08:00"}
+  ],
+  "samples": [
+    {"sampleId": "smp-a-01", "parcels": ["field-a"], "sampledAt": "2026-09-13T10:00:00+08:00", "recordedAt": "2026-09-14T09:00:00+08:00", "validUntil": "2026-09-20T10:00:00+08:00", "resultCode": "pass", "mixed": false},
+    {"sampleId": "smp-mix-01", "parcels": ["field-a", "field-b"], "sampledAt": "2026-09-13T11:00:00+08:00", "recordedAt": "2026-09-14T09:30:00+08:00", "validUntil": "2026-09-19T18:00:00+08:00", "resultCode": "pass", "mixed": true},
+    {"sampleId": "smp-c-01", "parcels": ["field-c"], "sampledAt": "2026-09-13T14:00:00+08:00", "recordedAt": "2026-09-14T10:00:00+08:00", "validUntil": "2026-09-20T14:00:00+08:00", "resultCode": "pass", "mixed": false}
+  ],
+  "rainfallForecasts": [
+    {"forecastId": "fcst-1", "parcels": [], "issuedAt": "2026-09-14T18:00:00+08:00", "hours": [
+      ["2026-09-15T08:00:00+08:00", 0.0], ["2026-09-16T08:00:00+08:00", 0.0],
+      ["2026-09-17T08:00:00+08:00", 0.0], ["2026-09-18T08:00:00+08:00", 0.0]
+    ]},
+    {"forecastId": "fcst-2", "parcels": [], "issuedAt": "2026-09-15T20:00:00+08:00", "hours": [
+      ["2026-09-16T03:00:00+08:00", 6.0], ["2026-09-16T04:00:00+08:00", 12.0],
+      ["2026-09-16T05:00:00+08:00", 14.0], ["2026-09-16T06:00:00+08:00", 12.0],
+      ["2026-09-16T07:00:00+08:00", 10.0], ["2026-09-16T08:00:00+08:00", 4.0],
+      ["2026-09-17T08:00:00+08:00", 0.0], ["2026-09-18T08:00:00+08:00", 0.0]
+    ]},
+    {"forecastId": "fcst-3", "parcels": [], "issuedAt": "2026-09-16T09:00:00+08:00", "hours": [
+      ["2026-09-17T08:00:00+08:00", 0.0],
+      ["2026-09-18T06:00:00+08:00", 8.0], ["2026-09-18T07:00:00+08:00", 12.0],
+      ["2026-09-18T08:00:00+08:00", 10.0], ["2026-09-18T12:00:00+08:00", 6.0]
+    ]}
+  ],
+  "proposals": [
+    {"proposalId": "prop-a", "parcel": "field-a", "proposedBy": "李清平（技术员）", "proposedAt": "2026-09-14T15:00:00+08:00", "windowStart": "2026-09-15T08:00:00+08:00", "windowEnd": "2026-09-18T18:00:00+08:00"},
+    {"proposalId": "prop-b", "parcel": "field-b", "proposedBy": "李清平（技术员）", "proposedAt": "2026-09-15T15:00:00+08:00", "windowStart": "2026-09-16T06:00:00+08:00", "windowEnd": "2026-09-19T18:00:00+08:00"},
+    {"proposalId": "prop-c", "parcel": "field-c", "proposedBy": "李清平（技术员）", "proposedAt": "2026-09-15T15:30:00+08:00", "windowStart": "2026-09-16T07:00:00+08:00", "windowEnd": "2026-09-19T18:00:00+08:00"}
+  ],
+  "timeline": [
+    {"type": "release", "parcel": "field-a", "by": "王质检", "at": "2026-09-15T09:00:00+08:00", "decisionId": "dec-a-1"},
+    {"type": "release", "parcel": "field-b", "by": "王质检", "at": "2026-09-15T16:05:00+08:00", "decisionId": "dec-b-1"},
+    {"type": "release", "parcel": "field-c", "by": "王质检", "at": "2026-09-15T16:30:00+08:00", "decisionId": "dec-c-1"},
+    {"type": "release", "parcel": "field-b", "by": "王质检", "at": "2026-09-15T21:00:00+08:00", "decisionId": "dec-b-2"},
+    {"type": "release", "parcel": "field-c", "by": "王质检", "at": "2026-09-15T21:10:00+08:00", "decisionId": "dec-c-2"},
+    {"type": "release", "parcel": "field-b", "by": "王质检", "at": "2026-09-16T09:30:00+08:00", "decisionId": "dec-b-3"},
+    {"type": "release", "parcel": "field-c", "by": "王质检", "at": "2026-09-16T09:35:00+08:00", "decisionId": "dec-c-3"},
+    {"type": "reconfirm", "parcel": "field-a", "by": "王质检 / 采收一组", "at": "2026-09-16T09:10:00+08:00", "decisionId": "dec-a-1"},
+    {"type": "withdraw", "parcel": "field-a", "by": "王质检", "at": "2026-09-16T09:45:00+08:00", "decisionId": "dec-a-2", "dueToObservation": "obs-a-input-late"}
+  ],
+  "workOrders": [
+    {"parcel": "field-a", "state": "claimed", "workOrderId": "wo-a", "claimedAt": "2026-09-15T16:00:00+08:00"}
+  ]
+}
